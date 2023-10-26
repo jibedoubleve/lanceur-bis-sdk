@@ -1,0 +1,46 @@
+# This workflow will build a .NET project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+name: Build & publish packages
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - edited
+      - synchronize
+      - ready_for_review
+    branches: 
+      - master
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - name: Get the sources
+      uses: actions/checkout@v3
+      
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+
+    - name: Restore dependencies
+      run: dotnet restore ./src/
+
+    - name: GitVersion
+      run: dotnet gitversion ./src/ -updateprojectfiles
+
+    - name: Build solution
+      run: dotnet build ./src/ --no-restore --configuration release
+
+    - name: Pack Nuget package
+      run: dotnet pack ./src/ --no-restore --configuration release
+
+    - name: Push Nuget package
+      run: dotnet nuget push "./src/Lanceur.Core.Plugins/bin/Release/Lanceur.Core.Plugins.*.nupkg"" --api-key ${{secrets.NUGET_GITHUB_TOKEN}} --source "github"
+    #- name: Test
+    #  run: dotnet test --no-build --verbosity normal
