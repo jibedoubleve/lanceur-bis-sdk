@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lanceur.Core.Plugins", "Lanceur.Core.Plugins\Lanceur.Core.Plugins.csproj", "{9E5BDC1C-C666-4BD5-9A95-09899E24755B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lanceur.Core.Plugins", "src\Lanceur.Core.Plugins\Lanceur.Core.Plugins.csproj", "{3A35E205-7658-45AD-AFEC-632F0311DC7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9E5BDC1C-C666-4BD5-9A95-09899E24755B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9E5BDC1C-C666-4BD5-9A95-09899E24755B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9E5BDC1C-C666-4BD5-9A95-09899E24755B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9E5BDC1C-C666-4BD5-9A95-09899E24755B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A35E205-7658-45AD-AFEC-632F0311DC7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A35E205-7658-45AD-AFEC-632F0311DC7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A35E205-7658-45AD-AFEC-632F0311DC7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A35E205-7658-45AD-AFEC-632F0311DC7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

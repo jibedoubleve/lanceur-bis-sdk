@@ -3,14 +3,14 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
-    <AssemblyVersion>2.4.0</AssemblyVersion>
-    <FileVersion>2.4.0</FileVersion>
-    <Version>2.4.0</Version>
+    <AssemblyVersion>2.4.2</AssemblyVersion>
+    <FileVersion>2.4.2</FileVersion>
+    <Version>2.4.2</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Lanceur 2 Plugin SDK </Title>
 
     <OutputType>Library</OutputType>
-    <PackageId>Lanceur_2_SDK</PackageId>
+    <PackageId>Lanceur.Core.Plugins</PackageId>
     <Authors>JB Wautier</Authors>
     <Company>Probel</Company>
     <PackageDescription>SDK to create plugin for Lanceur 2</PackageDescription>
