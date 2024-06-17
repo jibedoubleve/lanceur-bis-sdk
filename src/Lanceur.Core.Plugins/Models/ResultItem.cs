@@ -15,8 +15,9 @@
             }
         }
 
-        public ResultItem(string name, string description, string icon = null)
+        public ResultItem(string name, string description, string icon = null, Action onExecute = null)
         {
+            OnExecute = onExecute;
             Name = name ?? string.Empty;
             Description = description ?? string.Empty;
             Icon = icon ?? "CellFunction";
@@ -29,7 +30,11 @@
         protected static IEnumerable<ResultItem> NoResult => new List<ResultItem>();
         protected static Task<IEnumerable<ResultItem>> NoResultAsync => Task.FromResult(NoResult);
         protected IPlugin Plugin { get; }
-
+        /// <summary>
+        /// If set, this <see cref="ResultItem"/> executes this action when user select this result from the UI.
+        /// If set to <c>null</c>, this result is not actionable
+        /// </summary>
+        public Action OnExecute { get; }
         public string Description { get; }
 
         /// <summary>
