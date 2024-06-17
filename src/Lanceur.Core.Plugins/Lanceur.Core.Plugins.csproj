@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AssemblyVersion>2.4.0</AssemblyVersion>
+    <FileVersion>2.4.0</FileVersion>
+    <Version>2.4.0</Version>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Lanceur 2 Plugin SDK </Title>
+
+    <OutputType>Library</OutputType>
+    <PackageId>Lanceur_2_SDK</PackageId>
+    <Authors>JB Wautier</Authors>
+    <Company>Probel</Company>
+    <PackageDescription>SDK to create plugin for Lanceur 2</PackageDescription>
+    <RepositoryUrl>https://github.com/jibedoubleve/lanceur-bis-sdk</RepositoryUrl>
+  </PropertyGroup>
+
+</Project>
